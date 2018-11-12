@@ -1,13 +1,40 @@
 import React, { Component} from "react"
 
-class App extends Component{
+class App extends Component {
 
-  render(){
-    return(
-      <div className="App">
-      <h1> Hello, World! </h1>
-    </div>
-  )
+  state = {
+    words: ['fuck', 'ordinateur', 'vendre'],
+  }
+
+  /**
+   * Init function to start the game
+   */
+  start = () => {
+
+  }
+
+  /**
+   * Display letters' places
+   */
+  displayInputs = () => {
+
+  }
+
+  /**
+   * find letter in the choosen word
+   */
+  findLetter = () => {
+
+  }
+
+  render() {
+    const { words } = this.state
+
+    return (
+      words.map((word, idx) => (
+        <p key={idx}>{word}</p>
+      ))
+    )
   }
 }
 
